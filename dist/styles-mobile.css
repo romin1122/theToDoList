@@ -1,0 +1,50 @@
+@media (max-width:800px) 
+{
+	#projectContents
+	{
+		margin-left: 1.7em;
+		margin-right: 3.4em;
+	}
+
+
+	#newTodoButton
+	{
+		width: 7em;
+	}
+
+	.todoContainerOnEdit, #newTodoSection
+	{
+		grid-gap: .4em;
+		grid-column-gap: 3em;
+		grid-template-areas: 
+			"title"
+			"description"
+			"notes"
+			"dueDate"
+			"priority"
+			"save"
+			"cancel";
+	}
+
+
+
+
+
+
+	#navContainer
+	{
+		width: 80%;
+		max-width: 80%
+	}
+
+	.priorityText, .project
+	{
+		overflow: wrap;
+	}
+
+	.priorityEdit, .priorityDelete
+	{
+		margin-left: 1em;
+	}
+	
+}

@@ -1,26 +1,27 @@
 {
-  "name": "todolist",
+  "name": "theToDoList",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhymenulhaque/ToDoList.git"
+    "url": "git+https://github.com/muhymenulhaque/theToDoList.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/muhymenulhaque/ToDoList/issues"
+    "url": "https://github.com/muhymenulhaque/theToDoList/issues"
   },
-  "homepage": "https://github.com/muhymenulhaque/ToDoList#readme",
+  "homepage": "https://github.com/muhymenulhaque/theToDoList#readme",
   "devDependencies": {
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "date-fns": "^2.11.1"
+    "date-fns": "^2.14.0"
   }
 }
