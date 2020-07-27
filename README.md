@@ -18,4 +18,4 @@ The project contains the following functionalities:
 	- All of the user data is saved in local storage so it remains after being refreshed too
 
 
-I tried my best to follow the Single Responsibility principle and also tried making the core objects loosely held. But I now realize that I need a Controller type of thing in order to make the objects actually loosely held and communicate with each other. And I tried to make the new DOM elements dynamically appending. Used webpack to organize my code by using ES6 modules. The whole project was done with vanilla JavaScript and all html content were rendered by JavaScript as well.
+I tried my best to follow the Single Responsibility principle and also tried making the core objects loosely coupled. But I now realize that I need a Controller type of thing in order to make the objects actually loosely coupled and communicate with each other. And I tried to make the new DOM elements dynamically appending. Used webpack to organize my code by using ES6 modules. The whole project was done with vanilla JavaScript and all html content were rendered by JavaScript as well.
