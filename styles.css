@@ -323,7 +323,7 @@ body
 {
 	z-index: 2;
 	background-color: black;
-	opacity: .45;
+	opacity: .35;
 	height: 100%;
 	width: 100%;
 
@@ -336,7 +336,7 @@ body
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #C5C5C5FF;
+	background-color: #D6D6D6FF;
 	min-width: 30%;
 	max-width: 30%;
 	min-height: 100%;
