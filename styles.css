@@ -1,0 +1,473 @@
+textarea
+{
+	resize: none;
+}
+
+body 
+{
+	font-family: 'Ubuntu', sans-serif;
+	width:100%;
+	height: 100%;
+}
+
+#top
+{
+	width: 100%;
+	display:flex;
+}
+
+#logo
+{
+	margin-left: auto;
+	margin-right: auto;
+
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: .7em .5em 0 .5em;
+	height: 1em;
+	border-bottom: 3px solid black;
+}
+
+
+
+#projectContents
+{
+	margin: 1.5em 5em 0 5em;
+}
+
+#menuIcon
+{
+	margin-left: 0;
+	margin-top: 0;
+	padding: 1em;
+}
+
+
+#projectInfo 
+{
+	display: flex;
+	font-size: 1.5em;
+	font-weight: bold;
+
+	align-items: center;
+}
+
+#contentProjectTitle
+{
+	margin-right: 3em;
+}
+
+#projectEditImg, #projectDeleteImg
+{
+	height: 1em;
+	margin:0 .1em;
+}
+
+#projectEditArea
+{
+	font-size: .9em;
+	width: 10em;
+	margin-right: .1em;
+}
+
+#projectRenameSection > button
+{
+
+	border-radius: .2em;
+	border: .5px solid black;
+
+	font-size: .9em;
+	font-weight: bold;
+	margin: 0 .1em;
+}
+
+#projectNameSaver
+{
+	background-color: #E2FF99;
+}
+
+#projectNameSaver:hover
+{
+	background-color: #C5FF33;
+}
+
+
+
+
+#todoSection
+{
+	margin:1em 0;
+	margin-bottom: 3em;
+}
+
+.todoContainer
+{
+	display:flex;
+	align-items: center;
+
+	width: 100%;
+	border:1px solid black;
+	border-radius: .7em;
+	padding: .78em;
+	margin-bottom: .3em;
+
+}
+
+.todoContainer > img
+{
+	height: 1.5em;
+	width: 3em;
+}
+
+.editSign, .deleteSign, .reduce
+{
+	margin-left: auto;
+
+}
+.todoFullInfo
+{
+	display: flex;
+	flex-direction: column;
+}
+.todoFullInfo > *
+{
+	margin: .5em;
+}
+
+.todoPriorityContainer
+{
+	display: flex;
+}
+
+.todoPriorityColor
+{
+	height: .8em;
+	width: .8em;
+	border-radius: 50%;
+}
+
+.todoPriorityText
+{
+	margin-left: .2em;
+	align-items: center;
+}
+
+
+
+
+#newTodoButton
+{
+	font-size: 1.5em;
+	width: 10em;
+	border: 1px solid black;
+	border-radius: .2em;
+	font-weight: bold;
+}
+
+
+
+
+.todoContainerOnEdit, #newTodoSection
+{
+	display: grid;
+	grid-template-areas: 
+		"title save"
+		"description cancel"
+		"notes nada"
+		"dueDate priority";
+		
+	grid-gap: .4em;
+	grid-column-gap: 3em;
+	
+	width: 100%;
+	border:1px solid black;
+	border-radius: .7em;
+	padding: .78em;
+	margin-bottom: .3em;
+}
+
+
+
+.todoContainerOnEdit > button, #newTodoSection > button
+{
+	border: 1px solid black;
+	border-radius: .2em;
+	font-weight: bold;
+	height: 2em;
+
+	width: 10em;
+	align-self: right;
+}
+
+
+
+
+.titleEditArea, #newTodoTitleEditArea
+{
+	grid-area: title;
+}
+
+.descriptionEditArea, #newTodoDescriptionEditArea
+{
+	grid-area: description;
+}
+
+.noteEditArea, #newTodoNoteEditArea
+{
+	grid-area: notes;
+}
+
+.dueDateEditArea, #dueDateEditArea
+{
+	grid-area: dueDate;
+}
+
+.priorityEditArea, #newTodoPriorityEditArea
+{
+	grid-area: priority;
+}
+
+.todoSaveButton, #newTodoSaveButton
+{
+	grid-area: save;
+	background-color: #AAFF7FFF;
+}
+
+.todoSaveButton:hover, #newTodoSaveButton:hover
+{
+
+	background-color: white;
+}
+
+.todoCancelButton, #newTodoCancelButton
+{
+	grid-area: cancel;
+}
+
+
+
+
+
+
+
+
+
+
+#checklistTitle
+{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.checklistItemContainer
+{
+	margin-top: .4em;
+
+	display: flex;
+	align-items: center;
+}
+.itemCheck, .itemEditButton
+{
+	height:1.3em;
+}
+.itemValue
+{
+	padding: .3em;
+}
+#newItemButton
+{
+	margin-top: 1em;
+}
+.itemNameEditInput, #newItemInput, #projectInput, #priorityInput, .priorityEditInput
+{
+	margin: 0 .4em;
+	border: none;
+	border-bottom: 1px solid black;
+}
+.itemEditSaveBtn, .itemEditCancelBtn, #newItemButton, #newItemSave, #newItemCancel,
+ #newProjectButton, #newPriorityButton, #projectSaveButton, #projectCancelButton, 
+ #prioritySaveButton, #priorityCancelButton, .priorityOnEdit > button
+{
+	border: 1px solid black;
+	width: 7em;
+	margin: 0 1em;
+	padding: .2em;
+	border-radius: .2em;
+	font-weight: bold;
+}
+.itemEditSaveBtn, #newItemSave
+{
+	background-color: #AAFF7FFF;
+}
+.itemEditSaveBtn:hover, #newItemSave:hover
+{
+	background-color: white;
+}
+#newItemButton, #newProjectButton, #newPriorityButton
+{
+	margin: .5em 0;
+	padding: .4em;
+}
+#newItemInput
+{
+	margin: 1em 0 1em 0;
+}
+
+
+
+
+
+
+
+#blackBackground
+{
+	z-index: 2;
+	background-color: black;
+	opacity: .45;
+	height: 100%;
+	width: 100%;
+
+	position: fixed;
+	top:0;
+	left:0;
+}
+#navContainer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #C5C5C5FF;
+	min-width: 30%;
+	max-width: 30%;
+	min-height: 100%;
+
+	z-index: 3;
+}
+#navContainer > img
+{
+	height: 2em;
+	margin: 1em;
+	background-color: white;
+}
+#navContainer > img:hover
+{
+	background-color: #FF7272FF;
+}
+#projectSection, #prioritySection
+{
+	margin-left: 2em;
+}
+#projectSection
+{
+	margin-bottom: 2.5em;
+}
+#navProjectTitle, #navPriorityTitle
+{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#projects, #priorities
+{
+	margin: .5em 1em;
+}
+
+#newProjectButton, #newPriorityButton
+{
+	width: 10em;
+	min-height: 2.5em;
+	background-color: #DADADAFF;
+}
+#newProjectButton:hover, #newPriorityButton:hover
+{
+	background-color: white;
+}
+
+#projects, #priorities
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.priorityContainer, .project
+{
+	margin-top: .3em;
+	display: flex;
+}
+
+.priorityColor
+{
+	height: 1.2em;
+	min-width: 1.2em;
+	border-radius: 50%;
+
+	margin-right: .4em;
+}
+
+#projectInput, #priorityInput
+{
+	background: none;
+	margin-left: 1em;
+}
+
+#newProjectArea > button, #newPriorityArea > input, #newPriorityArea > button, .priorityOnEdit > button
+{
+	margin-top: .5em;
+}
+
+#newPriorityArea > input, .priorityOnEdit > input
+{
+	margin-left: 1em;
+}
+
+
+#navContainer > button:hover
+{
+	background-color: white;
+}
+
+
+
+.priorityOnEdit
+{
+	margin: 1.5em 0;
+}
+.priorityEdit, .priorityDelete
+{
+	height: 1.3em;
+	margin-left: 2em;
+}
+.priorityEditInput
+{
+	background:none;
+}
+.priorityEditColorInput
+{
+	margin-top: .5em;
+}
+.priorityOnEdit
+{
+	display: block;
+}
+
+
+
+
+
+
+
+.dueDateContainer
+{
+	border: 2px solid black;
+	width: max-content;
+	padding: .4em;
+	border-radius: .3em;
+}
+
+
+
+
+
+#newProjectArea > button:hover, #newPriorityArea > button:hover
+{
+	background-color: white;
+}
