@@ -176,9 +176,8 @@ function viewTodos(todoSection, Project, Priority)
 			else if (daysLeft == -183)
 				dueDateContent = "Yesterday";
 			else
-				dueDateContent = format(parse(todo.dueDate, "yyyy-mm-dd", new Date()), "dd LLL yyyy");
+				dueDateContent = format(parse(todo.dueDate, "yyyy-MM-dd", new Date()), "dd MMM yyyy");
 		}
-		console.log(daysLeft);
 
 		let dueDateContainer = element("span");
 		dueDateContainer.classList.add("dueDateContainer");
