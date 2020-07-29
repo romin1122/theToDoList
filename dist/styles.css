@@ -335,14 +335,22 @@ body
 {
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 100%;
 	background-color: #D6D6D6FF;
 	min-width: 30%;
 	max-width: 30%;
 	min-height: 100%;
 
 	z-index: 3;
+
+	transition: transform 500ms ease-out;
 }
+
+.visible
+{
+	transform: translate(100%, 0);
+}
+
 #navContainer > img
 {
 	height: 2em;

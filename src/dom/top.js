@@ -29,6 +29,7 @@ let loadTop = (container, nav, ...args) => {
 			document.querySelector("#closeButton").click();
 			nav(container, ...args);
 		}
+		setTimeout(() => document.querySelector("#navContainer").classList.toggle("visible"), 10);
 	}
 }
 

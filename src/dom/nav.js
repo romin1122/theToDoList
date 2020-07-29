@@ -137,8 +137,11 @@ function nav(container, Controller, Priority, projectContentContainer) {
 
 	//close button function
 	closeImage.onclick = () => {
-		navContainer.remove();
-		blackBackground.remove();
+		navContainer.classList.toggle("visible");
+		setTimeout(() => {
+			navContainer.remove();
+			blackBackground.remove();
+		}, 500);
 	}
 
 
