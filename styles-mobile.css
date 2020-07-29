@@ -46,5 +46,31 @@
 	{
 		margin-left: 1em;
 	}
-	
+
+
+	#projectRenameSection
+	{
+		display: grid;
+		grid-template-areas: 
+			"input input delete"
+			"save cancel delete";
+	}
+
+	#projectEditArea 
+	{
+		grid-area: input;
+		margin-bottom: .38em;
+	}
+	#projectNameSaver
+	{
+		grid-area: save;0
+	}
+	#projectEditCancel
+	{
+		grid-area: cancel;
+	}
+	#projectDeleteImg
+	{
+		grid-area: delete;
+	}
 }
